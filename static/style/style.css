@@ -1,5 +1,6 @@
 body{
-    background-image: url('../images/pexels-photo-1070850.jpeg'); 
+    /*background-image: url('../images/pexels-photo-1070850.jpeg'); */
+    background: linear-gradient(20deg, #0fb8ad 0%, #5bdb1f 51%, #e8902c 85%);
     height: 100%;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -23,7 +24,11 @@ body{
     background: transparent;
 }
 .footer-style{
+    background-color:darkslategrey;
     color: gold;
     text-align: center;
     float: left;
+}
+.footer-card{
+    height: 200px;
 }
