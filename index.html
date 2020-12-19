@@ -10,7 +10,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./static/style/style.css">
+    <script>
+        /*function showIt(element) {
+            $(document).ready(function (element) {
+                $("button").click(function () {
+                    alert(hello);
+                })
+            })
+        }*/
+        $(document).ready(function () {
+            $("button").click(function () {
+                var divId = $(this).parent().parent().attr("id");
+                divId = '#' + divId;
+//                alert(divId);
+                $(divId).toggleClass("full");
+            });
+        });
+    </script>
+    <style>
+        .full{
+            width : 100%;
+        }
+    </style>
 </head>
 
 <body class="body">
@@ -50,103 +75,103 @@
             <!--Card Div Start-->
             <div class="row" style="margin-top: 10px;">
                 <div class="col-md-12">
+                    <div class="card cake-card " id="crd1">
+                        <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
+                        <div class="card-body" id="crdBTN">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                    <div class="card cake-card " id="crdBTN2">
+                        <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button class="btn btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
                     <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
-					</div>
-					<div class="card cake-card ">
+                    </div>
+                    <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
-					</div>
-					<div class="card cake-card ">
+                    </div>
+                    <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
-					</div>
-					<div class="card cake-card ">
+                    </div>
+                    <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
-					</div>
-					<div class="card cake-card ">
+                    </div>
+                    <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
-					</div>
-					<div class="card cake-card ">
+                    </div>
+                    <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
-					</div>
-					<div class="card cake-card ">
+                    </div>
+                    <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
-					</div>
-					<div class="card cake-card ">
+                    </div>
+                    <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
-					</div>
-					<div class="card cake-card ">
+                    </div>
+                    <div class="card cake-card ">
                         <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-					</div>
-					<div class="card cake-card ">
-                        <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-					</div>
-					<div class="card cake-card ">
-                        <img src="./static/images/img1.jpg" class="card-img-top card-image" alt="cake Image">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
                     </div>
                     <div class="card cake-card">
@@ -155,7 +180,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
                     </div>
                     <div class="card cake-card">
@@ -165,7 +190,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
                     </div>
                     <div class="card cake-card">
@@ -175,7 +200,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
                     </div>
                     <div class="card cake-card">
@@ -185,7 +210,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
                     </div>
                     <div class="card cake-card">
@@ -195,7 +220,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
                     </div>
                     <div class="card cake-card">
@@ -205,7 +230,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <button class="btn btn-primary">Go somewhere</button>
                         </div>
                     </div>
                 </div>
@@ -218,59 +243,64 @@
                 <div class="row">
                     <div class="col-md-4 footer-style footer-card">
                         <div class="col-md-12">
-							<h2>
-								<img src="./static/images/address.png" style="object-fit: scale-down; height: 30px;" alt="Phone Image">
-								Address
-							</h2>
-						</div>
-						<div class="col-md-12 mt-3" style="font-weight: 500; text-align: left; color: chocolate;">
-							
-						</div>
+                            <h2>
+                                <img src="./static/images/address.png" style="object-fit: scale-down; height: 30px;"
+                                    alt="Phone Image">
+                                Address
+                            </h2>
+                        </div>
+                        <div class="col-md-12 mt-3" style="font-weight: 500; text-align: left; color: chocolate;">
+
+                        </div>
                     </div>
                     <div class="col-md-4 footer-style footer-card">
                         <div class="col-md-12">
-							<h2>
-								<img src="./static/images/food-cart.png" style="object-fit: scale-down; height: 30px;" alt="Phone Image">
-								Services
-							</h2>
-						</div>
-						<div class="col-md-12 mt-3" style="font-weight: 500; text-align: left; color: chocolate;">
-							<ul style="list-style-image: url(./static/images/favicon.png);" >
-								<li>Birthday Cakes</li>
-								<li>Anivaarsary Cakes</li>
-								<li>Anivaarsary Cakes</li>
-							</ul>
-						</div>
+                            <h2>
+                                <img src="./static/images/food-cart.png" style="object-fit: scale-down; height: 30px;"
+                                    alt="Phone Image">
+                                Services
+                            </h2>
+                        </div>
+                        <div class="col-md-12 mt-3" style="font-weight: 500; text-align: left; color: chocolate;">
+                            <ul style="list-style-image: url(./static/images/favicon.png);">
+                                <li>Birthday Cakes</li>
+                                <li>Anivaarsary Cakes</li>
+                                <li>Anivaarsary Cakes</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-4 footer-style footer-card">
                         <div class="col-md-12">
-							<h2>
-								<img src="./static/images/contact-us.png" style="object-fit: scale-down; height: 30px;" alt="Phone Image">
-								Contact Details
-							</h2>
-						</div>
-						<div class="col-md-12 mt-3" style="font-weight: 500; text-align: left; color: chocolate;">
-							<div class="col-md-12">
-								<table class="table">
-									<tbody style="text-align: left;">
-										<tr>
-											<td>
-												<img src="./static/images/smartphone-call.png" style="object-fit: scale-down; height: 20px;" alt="Phone Image">
-												Contact No:
-											</td>
-											<td>+91 1234567890</td>
-										</tr>
-										<tr>
-											<td>
-												<img src="./static/images/email.png" style="object-fit: scale-down; height: 20px;"  alt="Email Png">
-												Email :
-											</td>
-											<td>abc@abc.com</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
+                            <h2>
+                                <img src="./static/images/contact-us.png" style="object-fit: scale-down; height: 30px;"
+                                    alt="Phone Image">
+                                Contact Details
+                            </h2>
+                        </div>
+                        <div class="col-md-12 mt-3" style="font-weight: 500; text-align: left; color: chocolate;">
+                            <div class="col-md-12">
+                                <table class="table">
+                                    <tbody style="text-align: left;">
+                                        <tr>
+                                            <td>
+                                                <img src="./static/images/smartphone-call.png"
+                                                    style="object-fit: scale-down; height: 20px;" alt="Phone Image">
+                                                Contact No:
+                                            </td>
+                                            <td>+91 1234567890</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="./static/images/email.png"
+                                                    style="object-fit: scale-down; height: 20px;" alt="Email Png">
+                                                Email :
+                                            </td>
+                                            <td>abc@abc.com</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
