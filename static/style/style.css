@@ -18,7 +18,12 @@ body{
 .cake-card{ 
     float: left;
     padding: 10px;
-    margin: 5px;
-    width: 18rem;
+    margin: 9px;
+    width: 19rem;
     background: transparent;
+}
+.footer-style{
+    color: gold;
+    text-align: center;
+    float: left;
 }
